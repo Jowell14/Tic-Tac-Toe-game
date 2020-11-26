@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Tic Tac Toe game</title>
+</head>
+
+<body onload="play()">
+    <h1 class="game-title">
+        <span class="tic">tic</span>
+        <span class="tac">tac</span>
+        <span class="toe">toe</span></h1>
+    <div class="board" id="board">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+    </div>
+    <div class="x-score">
+        <!-- <span class="x-score-name">X</span> -->
+        <span class="score" data-x-score-update></span>
+    </div>
+    <div class="circle-score">
+        <!-- <span class="circle-score-name">O</span> -->
+        <span class="score" data-circle-score-update></span>
+    </div>
+
+    <div class="winning-message" id="winningMessage">
+        <div data-winning-message-text></div>
+        <button class="winning-message-button" id="restartButton">Restart</button>
+    </div>
+    <audio id="placemark-sound" src="sounds/button-29.mp3"></audio>
+    <audio id="win-sound" src="sounds/applause8.mp3"></audio>
+    <audio id="draw-sound" src="sounds/lowlife.mp3"></audio>
+    <audio id="back-music" src="sounds/09264bf9-f157-4780-a14e-e7cb2fada44e.mp3"></audio>
+</body>
+
+</html>
